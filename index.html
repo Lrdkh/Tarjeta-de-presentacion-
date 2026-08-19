@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tarjeta de Presentacion</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef1f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .card {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background: #f2f2f2;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  .side {
+    width: 220px;
+    background: #1a5c3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+  }
+  .side .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .side .tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 4px;
+    font-weight: 300;
+  }
+  .content {
+    flex: 1;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content h1 {
+    color: #1a5c3a;
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .content .role {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  .row .icon {
+    color: #1a5c3a;
+    width: 18px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .row a {
+    color: #1a5c3a;
+    text-decoration: underline;
+  }
+  .qr-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #ccc;
+  }
+  .qr-block img {
+    width: 100px;
+    height: 100px;
+  }
+  .qr-block .qr-text {
+    font-size: 12px;
+    color: #555;
+    max-width: 180px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="side">
+    <div class="logo">MULTILOG</div>
+    <div class="tagline">INTERNACIONAL</div>
+  </div>
+  <div class="content">
+    <h1>Barbara Carreon</h1>
+    <div class="role">Administracion</div>
+
+    <div class="row">
+      <span class="icon">&#9742;</span>
+      <span>Tel. +52 (55) 5615 0258</span>
+    </div>
+    <div class="row">
+      <span class="icon">&#9993;</span>
+      <a href="mailto:barbara@multilog.com.mx">barbara@multilog.com.mx</a>
+    </div>
+    <div class="row">
+      <span class="icon">&#128205;</span>
+      <span>Felix Parra 77, San Jose Insurgentes, Benito Juarez, 03900 CDMX</span>
+    </div>
+    <div class="row">
+      <span class="icon">&#128187;</span>
+      <a href="https://www.multilog.com.mx" target="_blank">www.multilog.com.mx</a>
+    </div>
+
+    <div class="qr-block">
+      <img src="data:image/png;base64,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" alt="QR de contacto">
+      <div class="qr-text">Escanea para guardar el contacto directo en tu telefono</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
